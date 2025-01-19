@@ -1,0 +1,151 @@
+/* General Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f3f4f7;
+    color: #2c3e50;
+    transition: background-color 0.5s, color 0.5s;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #34495e;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header button {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.3s ease-in-out;
+}
+
+header button:hover {
+    background: #c0392b;
+}
+
+/* Tabbed Layout */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+    background: #ecf0f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.tabs button {
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    background: #ecf0f1;
+    color: #34495e;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    outline: none;
+}
+
+.tabs button:hover,
+.tabs button.active {
+    background: #34495e;
+    color: white;
+}
+
+/* Tab Content */
+.tab-content {
+    display: none;
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 900px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 1rem 0 0.5rem;
+    font-weight: bold;
+}
+
+form input {
+    padding: 0.7rem;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+form button {
+    background: #2ecc71;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+form button:hover {
+    background: #27ae60;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #2c3e50;
+    color: #ecf0f1;
+}
+
+.dark-mode .tabs {
+    background: #34495e;
+}
+
+.dark-mode .tabs button {
+    background: #34495e;
+    color: #ecf0f1;
+}
+
+.dark-mode .tabs button.active {
+    background: #e74c3c;
+}
+
+.dark-mode .tab-content {
+    background: #34495e;
+    color: #ecf0f1;
+    box-shadow: none;
+}
