@@ -4,70 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Interactive Portfolio</title>
 </head>
 <body>
-    <body>
-        <header>
-            <h1>My Portfolio</h1>
-            <button id="toggle-dark-mode">Toggle Dark Mode</button>
-        </header>
-    
-        <div class="tabs">
-            <button class="active">About Me</button>
-            <button>Education</button>
-            <button>Experience</button>
-            <button>Skills</button>
-            <button>Projects</button>
-            <button>Contact</button>
-        </div>
-    
-        <!-- About Me Tab Content -->
-        <div class="tab-content active" id="about">
-            <h2>About Me</h2>
-            <p>Placeholder for information about yourself.</p>
-        </div>
-    
-        <!-- Education Tab Content -->
-        <div class="tab-content" id="education">
-            <h2>Education</h2>
-            <p>Placeholder for education details.</p>
-        </div>
-    
-        <!-- Experience Tab Content -->
-        <div class="tab-content" id="experience">
-            <h2>Experience</h2>
-            <p>Placeholder for work experience.</p>
-        </div>
-    
-        <!-- Skills Tab Content -->
-        <div class="tab-content" id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Skill 1</li>
-                <li>Skill 2</li>
-                <li>Skill 3</li>
-            </ul>
-        </div>
-    
-        <!-- Projects Tab Content -->
-        <div class="tab-content" id="projects">
-            <h2>Projects</h2>
-            <p>Placeholder for projects.</p>
-        </div>
-    
-        <!-- Contact Tab Content -->
-        <div class="tab-content" id="contact">
-            <h2>Contact Information</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-    </body>
-    
+    <header>
+        <h1>My Portfolio</h1>
+        <button id="toggle-dark-mode">Toggle Dark Mode</button>
+    </header>
+
+    <div class="tabs">
+        <button class="active" data-tab="about">About Me</button>
+        <button data-tab="education">Education</button>
+        <button data-tab="experience">Experience</button>
+        <button data-tab="skills">Skills</button>
+        <button data-tab="projects">Projects</button>
+        <button data-tab="contact">Contact</button>
+    </div>
+
+    <div class="tab-content active" id="about">
+        <h2>About Me</h2>
+        <p>I am Augnina Krizel Reburiano. Im passionate about making a positive difference in the world. I’m creative and always look for new ways to improve things. I believe in justice and fairness, and I try to be kind, strong, and adaptable, especially when facing challenges. Leadership and helping others are important to me, and I work to make spaces safer and bring about change. I value meaningful relationships and enjoy the simple, beautiful moments in life.
+        </p>
+    </div>
+    <div class="tab-content" id="education">
+        <h2>Education</h2>
+        <p>I’m currently in my third year as a BSIT student. Honestly, I didn’t choose this course by preference but out of necessity. If I had the chance, I’d choose political science every time. However, I see this as a milestone on my journey, and I’ll be graduating in September 2025. Afterward, I plan to pursue my true passion and work toward a degree in political science.
+        </p>
+    </div>
+    <div class="tab-content" id="experience">
+        <h2>Experience</h2>
+        <p>Throughout my journey, I’ve faced challenges, learned to adapt, and always aimed to help others. Leadership, fairness, and meaningful connections have guided my growth.</p>
+    </div>
+    <div class="tab-content" id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><h3>Leadership </h3> I actively work to create positive change by leading projects and initiatives, always advocating for fairness and safety in my community.</li>
+            <li><h3>Resilience and Adaptibility</h3>I remain strong in difficult situations, adapting quickly to change and always finding ways to move forward toward my goals.</li>
+            <li><h3>Effective Communication </h3> I excel at connecting with others, whether it's through clear expression or active listening, which helps build strong relationships and foster collaboration.</li>
+        </ul>
+    </div>
+    <div class="tab-content" id="projects">
+        <h2>Projects</h2>
+        <p>I’m currently working on my capstone project, AiCore, an AI system that analyzes blood spatter patterns to help forensic science students recreate crime scenes. Another project I’m passionate about is organizing a research conference focused on leadership, where I’ll be hosting events to encourage learning and collaboration.
+
+        </p>
+    </div>
+    <div class="tab-content" id="contact">
+        <h2>Contact Information</h2>
+        <h4> Facebook: Augnina Krizel Reburiano 
+
+        </h4>
+        <h4>Contact Number: 09682712483
+           </h4>
+           <h4> Email: reburianonina@gmail.com</h4>
+        <form id="contact-form">
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
